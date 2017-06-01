@@ -23,4 +23,9 @@ public class WelcomeController extends BaseController {
         bodyPlain("Welcome " + namedPath("name") + " value: " + this.model.getValue());
     }
 
+    @Action("/raise")
+    void raise() {
+        throw new Error("wild error appears");
+    }
+
 }
