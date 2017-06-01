@@ -28,4 +28,11 @@ public class WelcomeController extends BaseController {
         throw new Error("wild error appears");
     }
 
+    @Action("/index_view")
+    void view() {
+        local("name", "hello");
+        local("model", this.model);
+        renderHtml("index/view");
+    }
+
 }
