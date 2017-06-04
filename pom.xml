@@ -12,7 +12,7 @@
         <dependency>
             <groupId>com.ireul.nerf</groupId>
             <artifactId>nerf</artifactId>
-            <version>0.1.20170604-SNAPSHOT</version>
+            <version>0.1.20170604</version>
         </dependency>
         <!-- test -->
         <dependency>
