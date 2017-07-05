@@ -2,6 +2,7 @@ package com.ireul.nerfweb.controllers;
 
 import com.ireul.nerf.inject.Inject;
 import com.ireul.nerf.web.controller.BaseController;
+import com.ireul.nerf.web.controller.Halt;
 import com.ireul.nerf.web.route.Action;
 import com.ireul.nerfweb.models.SomeModel;
 
@@ -26,6 +27,11 @@ public class WelcomeController extends BaseController {
     @Action("/raise")
     void raise() {
         throw new Error("wild error appears");
+    }
+
+    @Action("/halt")
+    void halt() {
+        throw new Halt("halt");
     }
 
     @Action("/index_view")
